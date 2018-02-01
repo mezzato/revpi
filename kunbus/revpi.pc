@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: domus_revpi
+Description: revpi package for Domus
+Version: 1
+Requires: piControl
+Libs: -L${libdir} -lpiControl
+Cflags: -I${includedir} -I${includedir}/interface/piControl

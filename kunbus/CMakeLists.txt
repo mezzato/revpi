@@ -41,7 +41,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 include(FindPkgConfig QUIET)
 if(PKG_CONFIG_FOUND)
 	# Produce a pkg-config file
-	foreach(PCFILE domus_revpi.pc)
+	foreach(PCFILE revpi.pc)
 		configure_file("pkgconfig/${PCFILE}.in" "${PCFILE}" @ONLY)
 		install(FILES       "${CMAKE_CURRENT_BINARY_DIR}/${PCFILE}"
 			DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig")
